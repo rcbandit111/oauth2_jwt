@@ -39,6 +39,7 @@ C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\exception\Base
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\entity\Users.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\utils\Role.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\exception\ErrorSource.java
+C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\security\WebSecurityConfig.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\service\OldPasswordsRepository.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\exception\EngineExceptionHandler.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\exception\ErrorResponse.java

@@ -47,6 +47,7 @@ org\engine\production\entity\OldPasswords$OldPasswordsBuilder.class
 org\engine\utils\GenericUtils.class
 org\engine\mapper\UserMapperImpl.class
 org\engine\dto\ResetPasswordDTO.class
+org\engine\security\WebSecurityConfig.class
 org\engine\mapper\UserMapper.class
 org\engine\exception\ErrorSource.class
 org\engine\dto\ActivatePasswordDTO$ActivatePasswordDTOBuilder.class

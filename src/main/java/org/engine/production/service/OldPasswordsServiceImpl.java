@@ -64,7 +64,7 @@ public class OldPasswordsServiceImpl implements OldPasswordsService {
 
     @Override
     public void save(OldPasswords entity) {
-
+        dao.save(entity);
     }
 
     @Override
