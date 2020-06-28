@@ -3,12 +3,14 @@ C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\exception\Erro
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\rest\dto\UserFilterDTO.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\reporting\Environment.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\service\OldPasswordsService.java
+C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\security\RevokeTokenEndpoint.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\service\PasswordAdminResetHandler.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\dto\NewPasswordTokenDTO.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\utils\LocalDateTimeConverter.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\service\DataPagesService.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\security\WebSecurityConfiguration.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\exception\ErrorResponseDTO.java
+C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\security\OAuth2AuthorizationServerConfigJwt.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\service\EMailSender.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\dto\ActivatePasswordDTO.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\dto\NewPasswordDTO.java
@@ -17,6 +19,7 @@ C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\reporting\Rest
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\config\BaseMapperConfig.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\security\jwt\JwtTokenProvider.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\service\DataPagesServiceImpl.java
+C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\security\CustomTokenEnhancer.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\reporting\ReportRequest.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\service\OldPasswordsServiceImpl.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\service\UserRestService.java
@@ -24,10 +27,12 @@ C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\ent
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\reporting\ReportingProcessor.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\dto\ActivatePasswordTokenDTO.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\exception\EngineException.java
+C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\security\OAuth2ResourceServerConfig.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\reporting\ReportResponse.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\context\ContextProductionDatasource.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\service\UsersRepository.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\service\DataPagesRepository.java
+C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\security\CustomClaimVerifier.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\entity\Sessions.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\rest\dto\UserFilter.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\exception\ExtraValueDto.java

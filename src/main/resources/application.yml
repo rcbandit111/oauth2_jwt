@@ -5,8 +5,8 @@ logging:
         com:
             backend: DEBUG
         org:
-            springframework: INFO
-            springframework.web: ERROR
+            springframework: DEBUG
+            springframework.web: DEBUG
 app:
     admin:
         confirm-url: /admin/auth/password?token=
@@ -29,6 +29,12 @@ security:
         token:
             secret-key: secret-key
             expire-length: 300000 # 5 minutes duration by default: 5 minutes * 60 seconds * 1000 miliseconds
+    oauth2:
+        resource:
+            jwt:
+                key-pair:
+                    alias: mytestkey
+                    store-password: mystorepass
 spring:
     profiles:
         active: local 
@@ -68,7 +74,7 @@ spring:
                         dialect: org.hibernate.dialect.MariaDBDialect
                 show-sql: true
             password: qwerty
-            username: root    
+            username: root
     warehouse:
         datasource:
             driver-class-name: org.mariadb.jdbc.Driver
