@@ -49,6 +49,7 @@ C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\ser
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\exception\EngineExceptionHandler.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\exception\ErrorResponse.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\dto\ResetPasswordDTO.java
+C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\security\AuthenticationExceptionHandlerEntryPoint.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\context\ContextWarehouseDatasource.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\security\UserDetailsHandler.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\exception\ErrorInfo.java

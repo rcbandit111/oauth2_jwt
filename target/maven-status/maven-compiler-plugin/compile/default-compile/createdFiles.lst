@@ -39,6 +39,7 @@ org\engine\production\service\DataPagesServiceImpl.class
 org\engine\service\EmailModel.class
 org\engine\exception\ErrorDetail.class
 org\engine\service\PasswordAdminResetHandler.class
+org\engine\security\AuthenticationExceptionHandlerEntryPoint.class
 org\engine\dto\NewPasswordDTO$NewPasswordDTOBuilder.class
 org\engine\production\entity\Users$UsersBuilder.class
 org\engine\production\entity\DataPages$DataPagesBuilder.class

@@ -22,10 +22,16 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Profile("!dev")
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements WebMvcConfigurer {
 
+    @Autowired
+    private AuthenticationExceptionHandlerEntryPoint handler;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
         // @formatter:off
+        // Disable CSRF (cross site request forgery)
+        http.csrf().disable();
+
         http.authorizeRequests()
                 .antMatchers("/users/authorize").permitAll()
                 .antMatchers("/users/reset_request").permitAll()
@@ -36,6 +42,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements W
                 .anyRequest().authenticated()
                 .and().formLogin().permitAll()
                 .and().csrf().disable();
+
+        // If a user try to access a resource without having enough permissions
+        http.exceptionHandling().authenticationEntryPoint(handler);
 
         // No session will be created or used by spring security
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
