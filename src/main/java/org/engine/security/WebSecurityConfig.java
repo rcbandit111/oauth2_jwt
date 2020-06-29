@@ -29,6 +29,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements W
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
+        // HttpSecurity is the first layer
         // @formatter:off
         http.authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/users/authorize").permitAll()
@@ -52,6 +53,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements W
     @Override
     public void configure(WebSecurity web) throws Exception {
 
+        // WebSecurity is the second layer
+        web.ignoring()
+                .antMatchers(HttpMethod.POST,"/users/authorize")
+                .antMatchers(HttpMethod.POST,"/users/reset_request")
+                .antMatchers(HttpMethod.POST,"/users/reset_token")
+                .antMatchers(HttpMethod.POST,"/users/reset_password")
+                .antMatchers(HttpMethod.POST,"/users/confirmation_token")
+                .antMatchers(HttpMethod.POST,"/users/reset_user_password");
     }
 
     @Bean
