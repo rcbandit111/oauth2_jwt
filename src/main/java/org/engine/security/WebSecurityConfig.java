@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -29,11 +30,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements W
     protected void configure(HttpSecurity http) throws Exception {
 
         // @formatter:off
-        // Disable CSRF (cross site request forgery)
-        http.csrf().disable();
-
         http.authorizeRequests()
-                .antMatchers("/users/authorize").permitAll()
+                .antMatchers(HttpMethod.POST, "/users/authorize").permitAll()
                 .antMatchers("/users/reset_request").permitAll()
                 .antMatchers("/users/reset_token").permitAll()
                 .antMatchers("/users/reset_password").permitAll()
