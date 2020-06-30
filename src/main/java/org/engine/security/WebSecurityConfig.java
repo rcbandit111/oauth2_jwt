@@ -32,15 +32,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter implements W
         // HttpSecurity is the first layer
         // @formatter:off
         http.authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/users/authorize").permitAll()
-                .antMatchers("/users/reset_request").permitAll()
-                .antMatchers("/users/reset_token").permitAll()
-                .antMatchers("/users/reset_password").permitAll()
-                .antMatchers("/users/confirmation_token").permitAll()
-                .antMatchers("/users/reset_user_password").permitAll()
+                .antMatchers(HttpMethod.POST,"/users/authorize").permitAll()
+                .antMatchers(HttpMethod.POST,"/users/reset_request").permitAll()
+                .antMatchers(HttpMethod.POST,"/users/reset_token").permitAll()
+                .antMatchers(HttpMethod.POST,"/users/reset_password").permitAll()
+                .antMatchers(HttpMethod.POST,"/users/confirmation_token").permitAll()
+                .antMatchers(HttpMethod.POST,"/users/reset_user_password").permitAll()
                 .anyRequest().authenticated()
                 .and().formLogin().permitAll()
                 .and().csrf().disable();
+
+        http.httpBasic().disable();
 
         // If a user try to access a resource without having enough permissions
         http.exceptionHandling().authenticationEntryPoint(handler);
