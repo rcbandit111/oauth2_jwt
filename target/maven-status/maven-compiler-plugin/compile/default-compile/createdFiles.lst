@@ -41,6 +41,7 @@ org\engine\exception\ErrorDetail.class
 org\engine\service\PasswordAdminResetHandler.class
 org\engine\security\AuthenticationExceptionHandlerEntryPoint.class
 org\engine\dto\NewPasswordDTO$NewPasswordDTOBuilder.class
+org\engine\dto\AuthenticationTokenDTO.class
 org\engine\production\entity\Users$UsersBuilder.class
 org\engine\production\entity\DataPages$DataPagesBuilder.class
 org\engine\rest\dto\UserNewDTO$UserNewDTOBuilder.class
@@ -57,6 +58,7 @@ org\engine\dto\ActivatePasswordDTO$ActivatePasswordDTOBuilder.class
 org\engine\security\jwt\JwtUser.class
 org\engine\dto\AuthenticationDTO.class
 org\engine\production\service\OldPasswordsRepository.class
+org\engine\dto\AuthenticationTokenDTO$AuthenticationTokenDTOBuilder.class
 org\engine\production\service\UsersServiceImpl.class
 org\engine\context\ContextWarehouseDatasource.class
 org\engine\dto\ResetUserDTO.class

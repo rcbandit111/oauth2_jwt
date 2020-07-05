@@ -5,6 +5,7 @@ C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\reporting\Envi
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\service\OldPasswordsService.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\security\RevokeTokenEndpoint.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\service\PasswordAdminResetHandler.java
+C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\dto\AuthenticationTokenDTO.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\dto\NewPasswordTokenDTO.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\utils\LocalDateTimeConverter.java
 C:\Users\plte1219\Desktop\CJM\oauth2_jwt\src\main\java\org\engine\production\service\DataPagesService.java

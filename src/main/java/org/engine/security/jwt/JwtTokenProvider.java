@@ -4,6 +4,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.engine.dto.AuthenticationTokenDTO;
 import org.engine.exception.EngineException;
 import org.engine.exception.ErrorDetail;
 import org.engine.security.UserDetailsHandler;
@@ -45,7 +46,7 @@ public class JwtTokenProvider {
         secretKey = Base64.getEncoder().encodeToString(secretKey.getBytes());
     }
 
-    public String createToken(String username, List<Role> roles) {
+    public AuthenticationTokenDTO createToken(String username, List<Role> roles) {
 
         Claims claims = Jwts.claims().setSubject(username);
         claims.put("auth", roles.stream().filter(Objects::nonNull)
@@ -55,12 +56,27 @@ public class JwtTokenProvider {
         Date now = new Date();
         Date validity = new Date(now.getTime() + validityInMilliseconds);
 
-        return Jwts.builder()
-            .setClaims(claims)
-            .setIssuedAt(now)
-            .setExpiration(validity)
-            .signWith(SignatureAlgorithm.HS512, secretKey)
-            .compact();
+        String token = Jwts.builder()
+                .setClaims(claims)
+                .setIssuedAt(now)
+                .setExpiration(validity)
+                .signWith(SignatureAlgorithm.HS512, secretKey)
+                .compact();
+
+        List<String> authorities = roles.stream()
+                .filter(Objects::nonNull)
+                .map(s -> s.getAuthority())
+                .collect(Collectors.toList());
+
+        // https://tools.ietf.org/html/rfc6749#section-5.1
+        AuthenticationTokenDTO tokenDTO = AuthenticationTokenDTO.builder()
+                .accessToken(token)
+                .tokenType("Bearer")
+                .role(authorities)
+                .expiresIn(validityInMilliseconds)
+                .build();
+
+        return tokenDTO;
     }
 
     public Authentication getAuthentication(String token) {
